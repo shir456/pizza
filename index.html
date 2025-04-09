@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניתוח דאטה פיצה 🍕📊</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe6cc, #ff9999);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            direction: rtl;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ff3333, #ff9933);
+            padding: 2rem;
+            text-align: center;
+            animation: slideIn 1s ease-in;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff3333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cc0000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-in;
+        }
+
+        h2 {
+            color: #ff3333;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .tableau-container {
+            border: 3px solid #ff9933;
+            border-radius: 10px;
+            padding: 1rem;
+            background: linear-gradient(45deg, #fff5e6, #ffe6cc);
+            overflow: hidden;
+        }
+
+        .tableau-iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        .highlight {
+            color: #cc0000;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(45deg, #ff3333, #ff9933);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .emoji-bounce {
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ניתוח דאטה פיצה <span class="emoji-bounce">🍕📊</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">בית</a></li>
+            <li><a href="#analysis">ניתוח נתונים</a></li>
+            <li><a href="#insights">תובנות</a></li>
+            <li><a href="#contact">צור קשר</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section" id="home">
+            <h2>ברוכים הבאים, אוהבי פיצה! 🍕</h2>
+            <p>גלו את ניתוח הנתונים הכי טעים שלנו עם טאבלו! הוויזואליזציות שלנו מביאות את המספרים לחיים כמו פיצה חמה מהתנור. 🔥</p>
+        </div>
+
+        <div class="section" id="analysis">
+            <h2>ניתוח טאבלו מומלץ <span class="emoji-bounce">📈</span></h2>
+            <p>הנה ה<span class="highlight">כוכב שלנו</span> - לוח המחוונים של טאבלו שגורם לנתונים לרקוד! צללו לתובנות למטה:</p>
+            <div class="tableau-container">
+                <iframe 
+                    class="tableau-iframe"
+                    src="https://public.tableau.com/views/Book1_17441310915230/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:embed=y&:showVizHome=n&:apiID=host0"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+
+        <div class="section" id="insights">
+            <h2>תובנות מרכזיות 🌟</h2>
+            <ul>
+                <li>זיהוי טרנדים בסטייל של פיצה חמה</li>
+                <li>נקודות דאטה שקופצות כמו גבינה נמסה 🧀</li>
+                <li>אלמנטים אינטראקטיביים לשחק עם המספרים</li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>צרו קשר 🍕</h2>
+            <p>יש שאלות? רוצים ניתוח מותאם אישית? שלחו לנו מייל ל-<a href="mailto:pizzadata@example.com">pizzadata@example.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 ניתוח דאטה פיצה | נוצר עם אהבה ותבלינים 🍕🔥</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const section = document.querySelector(this.getAttribute('href'));
+                    section.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
